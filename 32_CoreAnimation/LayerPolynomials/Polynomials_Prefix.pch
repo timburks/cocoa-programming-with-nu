@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Polynomials' target in the 'Polynomials' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
