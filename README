@@ -1,0 +1,15 @@
+
+Cocoa Programming with Nu
+
+This project contains selected examples from the new Third Edition
+of Aaron Hillegass' Cocoa Programming for Mac OS X:
+
+  http://www.amazon.com/gp/product/0321503619/ref=neontologycom-20
+
+Individual directories contain both Xcode projects and Nukefiles.
+All examples require Nu (http://programming.nu).
+
+Contributors, please follow the style used in 28_WebServices/AmaZone.
+
+Tim Burks
+tim@neontology.com

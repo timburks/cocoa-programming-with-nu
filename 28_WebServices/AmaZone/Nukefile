@@ -1,0 +1,14 @@
+;; Nukefile for AmaZone
+
+;; source files
+(set @nu_files 	  (filelist "nu/.*\.nu$"))
+(set @resources   (filelist "^English\.lproj/Infoplist.strings$"))
+(set @nib_files   (filelist "^English\.lproj/[^/]*\.nib$"))
+
+;; application description
+(set @application "AmaZone")
+(set @application_identifier   "nu.programming.amazone")
+
+;; build tasks
+(application-tasks)
+(task "default" => "application")
