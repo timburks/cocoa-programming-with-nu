@@ -1,0 +1,13 @@
+;; Nukefile for AmaZone
+
+;; source files
+(set @nu_files 	  (filelist "nu/.*\.nu$"))
+(set @nib_files   (filelist "^English\.lproj/[^/]*\.nib$"))
+
+;; application description
+(set @application "SpeakLine")
+(set @application_identifier   "nu.programming.speakline")
+
+;; build tasks
+(application-tasks)
+(task "default" => "application")
