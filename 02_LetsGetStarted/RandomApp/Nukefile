@@ -2,7 +2,6 @@
 
 ;; source files
 (set @nu_files 	  (filelist "nu/.*\.nu$"))
-(set @resources   (filelist "^English\.lproj/Infoplist.strings$"))
 (set @nib_files   (filelist "^English\.lproj/[^/]*\.nib$"))
 
 ;; application description

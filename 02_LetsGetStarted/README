@@ -1,0 +1,9 @@
+This chapter teaches the basics of working with XCode
+and Interface Builder. The aspiring Nu programmer will
+need to know corresponding information about TextMate.
+
+I have opted to create these first few chapters in 
+Interface Builder to demonstrate how IB can be used
+from Nu. Many would prefer to construct the interface
+in code, and there are plenty of examples how to do so.
+(See the RandomApp in the Nu source, for example.)

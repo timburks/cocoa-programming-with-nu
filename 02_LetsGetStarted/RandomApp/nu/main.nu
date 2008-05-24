@@ -11,7 +11,9 @@
 ;; Start by building the interface in Interface Builder
 ;; See the MainMenu.nib file in English.lproj/
 
-;; Now, create a class Foo with appropriate variables and actions
+;; @class Foo
+;; @description This controller class accepts the seed: and generate:
+;; events and makes appropriate changes to textField.
 (class Foo is NSObject
      (ivar (id) textField)
      
