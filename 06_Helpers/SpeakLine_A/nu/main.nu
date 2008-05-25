@@ -27,7 +27,6 @@
         (NSLog "didFinish:#{finishedNormally}")
         (@stopButton setEnabled:NO)
         (@startButton setEnabled:YES)))
-;; NuParseError: no open sexpr
 
 (set SHOW_CONSOLE_AT_STARTUP nil)
 
