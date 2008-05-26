@@ -6,6 +6,8 @@
      
      (- (id) init is
         (super init)
+        ;; Set the global variable $ac equal to the appController for easy access in the console.
+        (set $ac self)
         (NSLog "init")
         (set @speechSynth ((NSSpeechSynthesizer alloc) initWithVoice:nil))
         (@speechSynth setDelegate:self)
