@@ -9,24 +9,24 @@
         ;; Set the global variable $ac equal to the appController for easy access in the console.
         (set $ac self)
         (self setValue:5 forKey:"fido")
-		(set n (self valueForKey:"fido"))
-		(NSLog "fido = #{n}")
+        (set n (self valueForKey:"fido"))
+        (NSLog "fido = #{n}")
         self)
-
-	(- (void) incrementFido: (id) sender is
-		;; We don't need to call willChangeValueForKey or didChangeValueForKey
-		(set @fido (+ @fido 1))
-		(NSLog "fido is now #{@fido}"))
-
-	(- (int) fido is
-		(NSLog "-fido is returning #{@fido}")
-		@fido)
-	
-	(- (void) setFido: (int) x is
-		(NSLog "-setFido: is called with #{x}")
-		(set @fido x)))
-
      
+     (- (void) incrementFido: (id) sender is
+        ;; We don't need to call willChangeValueForKey or didChangeValueForKey
+        (set @fido (+ @fido 1))
+        (NSLog "fido is now #{@fido}"))
+     
+     (- (int) fido is
+        (NSLog "-fido is returning #{@fido}")
+        @fido)
+     
+     (- (void) setFido: (int) x is
+        (NSLog "-setFido: is called with #{x}")
+        (set @fido x)))
+
+
 (set SHOW_CONSOLE_AT_STARTUP nil)
 
 ;; @class ApplicationDelegate

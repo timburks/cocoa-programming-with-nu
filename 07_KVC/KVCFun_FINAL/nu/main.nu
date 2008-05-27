@@ -10,14 +10,14 @@
         ;; Set the global variable $ac equal to the appController for easy access in the console.
         (set $ac self)
         (self setValue:5 forKey:"fido")
-		(set n (self valueForKey:"fido"))
-		(NSLog "fido = #{n}")
+        (set n (self valueForKey:"fido"))
+        (NSLog "fido = #{n}")
         self)
-
-	(- (void) incrementFido: (id) sender is
-		;; We don't need to call willChangeValueForKey or didChangeValueForKey
-		(set @fido (+ @fido 1))
-		(NSLog "fido is now #{@fido}")))
+     
+     (- (void) incrementFido: (id) sender is
+        ;; We don't need to call willChangeValueForKey or didChangeValueForKey
+        (set @fido (+ @fido 1))
+        (NSLog "fido is now #{@fido}")))
 
 (set SHOW_CONSOLE_AT_STARTUP nil)
 
