@@ -14,11 +14,11 @@
         (NSLog "startObservingPerson: #{person}")
         (person addObserver:self
                  forKeyPath:"personName"
-                    options:0x02
+                    options:NSKeyValueObservingOptionOld
                     context:nil)
         (person addObserver:self
                  forKeyPath:"expectedRaise"
-                    options:0x02
+                    options:NSKeyValueObservingOptionOld
                     context:nil))
                     
     (- (void) stopObservingPerson: (id) person is

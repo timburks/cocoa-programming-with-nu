@@ -102,14 +102,13 @@
 	}
 }
 
-/*
 - (void)changeKeyPath:(NSString *)keyPath
 			 ofObject:(id)obj
 			  toValue:(id)newValue
 {
 	[obj setValue:newValue forKeyPath:keyPath];
 }
-*/
+
 - (void)observeValueForKeyPath:(NSString *)keyPath
 					  ofObject:(id)obj
 						change:(NSDictionary *)change

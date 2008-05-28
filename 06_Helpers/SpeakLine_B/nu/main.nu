@@ -50,7 +50,7 @@
 
      (- (id) tableView: (id) tv objectValueForTableColumn: (id) tc row: (int) row is
         (set dict (NSSpeechSynthesizer attributesForVoice:(@voiceList row)))
-		(dict objectForKey:(NuBridgedConstant constantWithName:"NSVoiceName" signature:"@"))))
+		(dict objectForKey:NSVoiceName)))
 
 (set SHOW_CONSOLE_AT_STARTUP nil)
 
