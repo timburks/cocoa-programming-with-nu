@@ -13,8 +13,8 @@
 		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
 		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
-		AB0670A50DED05BE00E0ABDA /* Nu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0670A40DED05BE00E0ABDA /* Nu.framework */; };
-		AB0670A70DED05E400E0ABDA /* main.nu in Resources */ = {isa = PBXBuildFile; fileRef = AB0670A60DED05E400E0ABDA /* main.nu */; };
+		AB1DE74D0DF37472008275EC /* Nu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1DE74C0DF37472008275EC /* Nu.framework */; };
+		AB1DE7510DF37490008275EC /* main.nu in Resources */ = {isa = PBXBuildFile; fileRef = AB1DE7500DF37490008275EC /* main.nu */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +30,8 @@
 		32DBCF750370BD2300C91783 /* RaiseMan_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaiseMan_Prefix.pch; sourceTree = "<group>"; };
 		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D15AC370486D014006FF6A4 /* RaiseMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaiseMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB0670A40DED05BE00E0ABDA /* Nu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nu.framework; path = /Library/Frameworks/Nu.framework; sourceTree = "<absolute>"; };
-		AB0670A60DED05E400E0ABDA /* main.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = main.nu; path = nu/main.nu; sourceTree = "<group>"; };
+		AB1DE74C0DF37472008275EC /* Nu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nu.framework; path = /Library/Frameworks/Nu.framework; sourceTree = "<absolute>"; };
+		AB1DE7500DF37490008275EC /* main.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = main.nu; path = ../RaiseMan_A/nu/main.nu; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +40,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
-				AB0670A50DED05BE00E0ABDA /* Nu.framework in Frameworks */,
+				AB1DE74D0DF37472008275EC /* Nu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +76,7 @@
 		2A37F4AAFDCFA73011CA2CEA /* RaiseMan */ = {
 			isa = PBXGroup;
 			children = (
-				AB0670A30DED05A900E0ABDA /* Nu */,
+				AB1DE7480DF37461008275EC /* Nu */,
 				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
 				2A37F4B8FDCFA73011CA2CEA /* Resources */,
 				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
@@ -109,17 +109,17 @@
 		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AB0670A40DED05BE00E0ABDA /* Nu.framework */,
+				AB1DE74C0DF37472008275EC /* Nu.framework */,
 				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
 				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		AB0670A30DED05A900E0ABDA /* Nu */ = {
+		AB1DE7480DF37461008275EC /* Nu */ = {
 			isa = PBXGroup;
 			children = (
-				AB0670A60DED05E400E0ABDA /* main.nu */,
+				AB1DE7500DF37490008275EC /* main.nu */,
 			);
 			name = Nu;
 			sourceTree = "<group>";
@@ -171,7 +171,7 @@
 				8D15AC2D0486D014006FF6A4 /* MainMenu.nib in Resources */,
 				8D15AC2E0486D014006FF6A4 /* MyDocument.nib in Resources */,
 				8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */,
-				AB0670A70DED05E400E0ABDA /* main.nu in Resources */,
+				AB1DE7510DF37490008275EC /* main.nu in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
