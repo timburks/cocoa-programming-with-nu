@@ -14,7 +14,7 @@
 		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
 		AB1DE74D0DF37472008275EC /* Nu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1DE74C0DF37472008275EC /* Nu.framework */; };
-		AB1DE7510DF37490008275EC /* main.nu in Resources */ = {isa = PBXBuildFile; fileRef = AB1DE7500DF37490008275EC /* main.nu */; };
+		AB9403130DF3861600D31812 /* main.nu in Resources */ = {isa = PBXBuildFile; fileRef = AB9403120DF3861600D31812 /* main.nu */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D15AC370486D014006FF6A4 /* RaiseMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaiseMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB1DE74C0DF37472008275EC /* Nu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nu.framework; path = /Library/Frameworks/Nu.framework; sourceTree = "<absolute>"; };
-		AB1DE7500DF37490008275EC /* main.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = main.nu; path = ../RaiseMan_A/nu/main.nu; sourceTree = SOURCE_ROOT; };
+		AB9403120DF3861600D31812 /* main.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = main.nu; path = nu/main.nu; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +119,7 @@
 		AB1DE7480DF37461008275EC /* Nu */ = {
 			isa = PBXGroup;
 			children = (
-				AB1DE7500DF37490008275EC /* main.nu */,
+				AB9403120DF3861600D31812 /* main.nu */,
 			);
 			name = Nu;
 			sourceTree = "<group>";
@@ -171,7 +171,7 @@
 				8D15AC2D0486D014006FF6A4 /* MainMenu.nib in Resources */,
 				8D15AC2E0486D014006FF6A4 /* MyDocument.nib in Resources */,
 				8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */,
-				AB1DE7510DF37490008275EC /* main.nu in Resources */,
+				AB9403130DF3861600D31812 /* main.nu in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

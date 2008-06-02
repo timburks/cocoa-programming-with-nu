@@ -17,39 +17,12 @@
             (else (super setNilValueForKey:key)))))
 
 (class MyDocument is NSDocument
-    (ivar (id) employees (id) employeeController (id) tableView)
+    (ivar (id) employees)
     
     (- (id) init is
         (super init)
         (self setEmployees:(array))
         self)
-
-    (- (BOOL) endEditing is
-        (set w (@tableView window))
-        (set editingEnded (w makeFirstResponder:w))
-        (unless (editingEnded) NO)
-        (set undo (self undoManager))
-        (if (undo groupingLevel)
-            (undo endUndoGrouping)
-            (undo beginUndoGrouping))
-        YES)
-
-    (- (void) createEmployee: (id) sender is
-        ; If a field is being edited, end editing
-        (unless (eq NO (self endEditing))
-            
-            (set p (@employeeController newObject))
-            (@employeeController addObject:p)
-            
-            ; In case the user has sorted the content array
-            (@employeeController rearrangeObjects)
-            
-            ; Find the row of the new object
-            (set a (@employeeController arrangedObjects))
-            (set row (a indexOfObjectIdenticalTo:p))
-            
-            ; Start editing in the first column
-            (@tableView editColumn:0 row:row withEvent:nil select:YES)))
         
     (- (void) startObservingPerson: (id) person is
         (person addObserver:self
